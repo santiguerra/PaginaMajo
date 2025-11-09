@@ -1,1 +1,215 @@
 # PaginaMajo
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Reina Hermosa 👸🏻❤️ - Nuestro Universo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <h1 class="header-title">
+                <span class="heart-icon">❤️</span>
+                Mi Reina Hermosa 👸🏻❤️
+            </h1>
+            <div class="counter-box">
+                <div class="counter-label">Juntos desde 6 de septiembre de 2025</div>
+                <div class="counter-time" id="counter"></div>
+                <div class="counter-next" id="nextMilestone"></div>
+            </div>
+        </div>
+        <div class="qr-popup" id="qrPopup">
+            <div class="qr-content">
+                <p style="font-size: 0.875rem; margin-bottom: 0.5rem;">🎁 Escanea para un mensaje especial</p>
+                <img src="Asets/QR.png" alt="Código QR para mensaje especial" class="qr-image">
+                <p style="font-size: 0.75rem; margin-top: 0.5rem; font-style: italic;">Te amo ❤️</p>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="quote">
+            Un regalo para mi reina hermosa
+        </div>
+        <!-- Tablón de Recuerdos -->
+        <section>
+            <h2 class="section-title">
+                📍 Tablón de Recuerdos
+            </h2>
+           
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="past">Pasado ❤️</button>
+                <button class="filter-btn" data-filter="future">Futuro 🌟</button>
+            </div>
+            <div class="location-grid" id="locationGrid"></div>
+            <div id="locationDetail"></div>
+        </section>
+        <!-- Generador de Mensajes -->
+        <section>
+            <h2 class="section-title">
+                ❤️ Razones por las que te amo
+            </h2>
+           
+            <div class="generator-container">
+                <button class="generate-btn" id="generateBtn">
+                    ❤️ Genera una razón por la que te amo
+                </button>
+                <div class="message-box" id="messageBox">
+                    <p class="message-text" id="messageText"></p>
+                </div>
+            </div>
+        </section>
+        <!-- Galería de Fotos -->
+        <section>
+            <h2 class="section-title">
+                📷 Galería de Momentos
+            </h2>
+           
+            <div class="gallery-container">
+                <div class="film-strip">
+                    <div class="film-roll" id="filmRoll">
+                        <img src="fotos1/IMG_1428.jpeg" alt="Foto 1">
+                        <img src="fotos1/IMG_1431.jpeg" alt="Foto 2">
+                        <img src="fotos1/IMG_1432.jpeg" alt="Foto 3">
+                        <img src="fotos1/IMG_1433.jpeg" alt="Foto 4">
+                        <img src="fotos1/IMG_1477.JPG" alt="Foto 5">
+                        <img src="fotos1/IMG_1504.JPG" alt="Foto 6">
+                        <img src="fotos1/IMG_1514.JPG" alt="Foto 7">
+                        <img src="fotos2/IMG_1561.JPG" alt="Foto 8">
+                        <img src="fotos2/IMG_1642.jpeg" alt="Foto 9">
+                        <img src="fotos2/IMG_1669.PNG" alt="Foto 10">
+                        <img src="fotos2/IMG_1702.jpeg" alt="Foto 11">
+                        <img src="fotos2/IMG_1703.jpeg" alt="Foto 12">
+                        <img src="fotos2/IMG_1704.jpeg" alt="Foto 13">
+                        <img src="fotos2/IMG_1705.jpeg" alt="Foto 14">
+                        <img src="fotos2/IMG_1706.jpeg" alt="Foto 15">
+                        <img src="fotos2/IMG_1707.jpeg" alt="Foto 16">
+                        <img src="fotos2/IMG_1709.jpeg" alt="Foto 17">
+                        <img src="fotos2/IMG_1710.jpeg" alt="Foto 18">
+                        <img src="fotos2/IMG_1711.jpeg" alt="Foto 19">
+                        <img src="fotos2/IMG_1712.jpeg" alt="Foto 20">
+                        <img src="fotos3/IMG_1713.jpeg" alt="Foto 21">
+                        <img src="temp2/IMG_0436.jpeg" alt="Foto adicional">
+                        <img src="temp2/IMG_0437.jpeg" alt="Foto adicional">
+                        <img src="temp2/IMG_0440.jpeg" alt="Foto adicional">
+                        <img src="temp3/IMG_0466.jpeg" alt="Foto adicional">
+                        <img src="temp3/IMG_0467.jpeg" alt="Foto adicional">
+                        <img src="temp4/IMG_1343.jpeg" alt="Foto adicional">
+                        <img src="temp4/IMG_1344.jpeg" alt="Foto adicional">
+                        <img src="temp4/IMG_1345.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_0951.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_0954.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_0955.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_0956.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_0957.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_0959.jpeg" alt="Foto adicional">
+                        <img src="Temp5/IMG_1031.jpeg" alt="Foto adicional">
+                        <img src="Temp6/IMG_0441.jpeg" alt="Foto adicional">
+                        <img src="Temp6/IMG_0442.jpeg" alt="Foto adicional">
+                        <img src="Temp6/IMG_0447.jpeg" alt="Foto adicional">
+                        <img src="Temp6/IMG_0451.jpeg" alt="Foto adicional">
+                        <img src="Temp6/IMG_0452.jpeg" alt="Foto adicional">
+                        <img src="Temp6/IMG_1040.PNG" alt="Foto adicional">
+                        <img src="temp1/0009D1D8-6C80-4983-82C1-13F24ED8661B.jpg" alt="Foto adicional">
+                        <img src="temp1/0E72876F-030D-43CE-A4C1-9F14D73E0FA0.jpg" alt="Foto adicional">
+                        <img src="temp1/163D7325-3FD4-4BAD-972D-24C1779D42A5.jpg" alt="Foto adicional">
+                        <img src="temp1/1c395f36-3dfa-4a41-994b-c2cbd6a1c80f.jpg" alt="Foto adicional">
+                        <img src="temp1/219ed69c-411b-4ad2-88c0-881039e358e6.jpg" alt="Foto adicional">
+                        <img src="temp1/298FBD71-3EDA-4516-B9FD-F1608FBD0F29.jpg" alt="Foto adicional">
+                        <img src="temp1/4ea417b7-020d-41cb-93f8-85cfe6c12faa.jpg" alt="Foto adicional">
+                        <img src="temp1/54F37407-804A-4BD8-8BAC-3A26CB91C256.jpg" alt="Foto adicional">
+                        <img src="temp1/667b668a-619f-4166-9135-b05e73e6ee13.jpg" alt="Foto adicional">
+                        <img src="temp1/67e519fd-e2ea-49af-a722-3a1d36f4e8ff.jpg" alt="Foto adicional">
+                        <img src="temp1/69822970-651a-4084-8fb4-c504886ff624.jpg" alt="Foto adicional">
+                        <img src="temp1/7EE62B4F-0847-429C-9F3A-28FE44241BBC.jpg" alt="Foto adicional">
+                        <img src="temp1/81ED8CDE-715A-4274-BB56-7399615D06D6.jpg" alt="Foto adicional">
+                        <img src="temp1/863B6E33-3FEE-449F-8279-B88BB0AF8883.jpg" alt="Foto adicional">
+                        <img src="temp1/8dd695d7-bacc-4de1-82a0-08ef3c9795d8.jpg" alt="Foto adicional">
+                        <img src="temp1/FullSizeRender.jpeg" alt="Foto adicional">
+                        <img src="temp1/IMG_0030.jpeg" alt="Foto adicional">
+                        <img src="temp1/IMG_0034.jpeg" alt="Foto adicional">
+                        <img src="temp1/IMG_0082.PNG" alt="Foto adicional">
+                        <img src="temp1/IMG_0296.jpeg" alt="Foto adicional">
+                        <img src="temp1/IMG_0297.jpeg" alt="Foto adicional">
+                        <img src="temp1/IMG_0298.jpeg" alt="Foto adicional">
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button class="gallery-btn" id="prevBtn">← Anterior</button>
+                    <button class="gallery-btn" id="nextBtn">Siguiente →</button>
+                </div>
+                <div class="gallery-info" id="galleryInfo">Haz clic en cualquier foto o video para verlo en grande</div>
+            </div>
+        </section>
+        <!-- Mensaje Secreto -->
+        <section>
+            <h2 class="section-title" id="secretTitle">
+                🔒 Mensaje Secreto
+            </h2>
+           
+            <div class="secret-container" id="secretContainer">
+                <p style="color: #666; margin-bottom: 1rem;">
+                    🔐 Descifra este mensaje para desbloquear algo especial:
+                </p>
+                <p class="encrypted-message">
+                    HLMAOTAOUHETEMRGLOAIMREMMCOSESIEAO
+                </p>
+                <p class="hint-text">
+                    💡 Pista: Lee alternadamente...
+                </p>
+                <input type="text" class="secret-input" id="secretInput" placeholder="Escribe la solución aquí...">
+                <button class="unlock-btn" id="unlockBtn">Desbloquear</button>
+            </div>
+        </section>
+    </main>
+    <!-- Modal de Galería -->
+    <div class="modal" id="galleryModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Momento Especial</h3>
+                <button class="close-btn" id="closeGalleryModal">✕</button>
+            </div>
+            <div class="modal-image">
+                <div class="modal-image-icon">📸</div>
+            </div>
+            <p class="modal-description" id="modalDescription"></p>
+            <p class="modal-info" id="modalInfo"></p>
+        </div>
+    </div>
+    <!-- Modal de Carta -->
+    <div class="modal" id="letterModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="letterModalTitle">💌 Carta</h3>
+                <button class="close-btn" id="closeLetterModal">✕</button>
+            </div>
+            <div class="letter-container">
+                <p id="letterDescription" style="color: #666;">
+                    Hola mi reina hermosa, quería decirte que el tiempo a tu lado pasa mucho más rápido y en un abrir y cerrar de ojos podemos decir que llevamos 2 meses de novios.
+                    Cada día a tu lado me llena de una felicidad que no sabía que existía, me llena de un gozo inexpresable. Gracias a ti me levanto todos los días con una sonrisa en mi rostro, pues eres mi primer pensamiento todas las mañanas y mi último suspiro antes de dormir. Eres la razón por la que el mundo parece más brillante, más lleno de colores y posibilidades. En estos dos meses, he descubierto en ti no solo a una novia, sino a una compañera de vida, alguien que me entiende con una sola mirada.
+
+                    Tus ojos hermosos, tus labios bellos y ese pelo divino me enamoran cada vez que te veo, pero es tu inteligencia, tu dedicación y tu corazón tan puro lo que me hace sentir el hombre más afortunado al estar contigo. Estar a tu lado me hace inmensamente feliz; es como si hubieras encendido un fuego en mi alma que nunca se apaga.
+
+                    Gracias por elegirme cada día, por apoyarme en mis sueños y por ser esa persona que hace que lo ordinario se vuelva extraordinario. Sueño con muchos más meses, años, siglos incluso, construyendo recuerdos juntos, viajando a nuevos lugares y enfrentando lo que venga, pero siempre tomando tu mano. Te amo más de lo que las palabras pueden expresar, mi reina.
+                </p>
+                <p style="color: #e53935; font-weight: 600; margin-top: 1rem; text-align: center;">Te amo mi reina hermosa ❤️</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-title">Hecho con ❤️ para mi Reina Hermosa</p>
+            <p class="footer-subtitle">Nuestro universo mágico • Desde el 6 de septiembre de 2025</p>
+            <div class="footer-hearts">
+                <span class="heart-icon">❤️</span>
+                <span class="heart-icon">❤️</span>
+                <span class="heart-icon">❤️</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
